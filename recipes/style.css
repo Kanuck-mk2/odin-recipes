@@ -15,9 +15,10 @@ a {
   background-color: hsl(0, 0%, 20%);
   margin-left: 10px;
 }
-.descript {
+pre {
   color: hsl(0, 0%, 100%);
   font-size: 20px;
+  margin-left: 5px;
 }
 
 /* Style the anchor (link) to make it more visible */
@@ -34,5 +35,14 @@ body {
 .hot-dog {
   border: 2px solid hsl(0, 0%, 0%);
   border-radius: 8px;
-  box-shadow: 0 0 5px 5px rgb(203, 72, 72);
+  box-shadow: 0 0 5px 5px hsl(0, 56%, 54%);
+}
+
+.plate {
+  height: 500px;
+  width: 300px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 8px;
+  box-shadow: 0 0 5px 5px hsl(60, 83%, 71%);
 }
