@@ -1,0 +1,28 @@
+* {
+  background-color: #333;
+}
+
+/* Selectors for various text/header elements */
+h1,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+a {
+  color: white;
+  background-color: #333;
+}
+
+/* Style the anchor (link) to make it more visible */
+a {
+  text-decoration: underline;
+}
+
+/* Optionally, you can style other elements for better readability */
+body {
+  background-color: #333; /* Set a background color to provide contrast */
+  font-family: Arial, sans-serif; /* Choose a suitable font family */
+  line-height: 1.6; /* Adjust line height for better readability */
+}
