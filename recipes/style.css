@@ -11,8 +11,13 @@ ul,
 ol,
 li,
 a {
-  color: white;
-  background-color: #333;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 20%);
+  margin-left: 10px;
+}
+.descript {
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
 }
 
 /* Style the anchor (link) to make it more visible */
@@ -25,4 +30,9 @@ body {
   background-color: #333; /* Set a background color to provide contrast */
   font-family: Arial, sans-serif; /* Choose a suitable font family */
   line-height: 1.6; /* Adjust line height for better readability */
+}
+.hot-dog {
+  border: 2px solid hsl(0, 0%, 0%);
+  border-radius: 8px;
+  box-shadow: 0 0 5px 5px rgb(203, 72, 72);
 }
