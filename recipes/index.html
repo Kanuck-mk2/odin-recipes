@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chili Dog Recipe</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <a id="header"></a>
@@ -18,8 +19,9 @@
       />
     </div>
     <h3><b>A Different Kind of Doggin'</b></h3>
-    <pre>These delicious chilidogs are a <b>great</b> meal idea for lunch, dinner, 
-        watching a game or binging your favourite show.
+    <pre>These delicious chilidogs are a <b>great</b> meal idea for
+       lunch, dinner, watching a game or
+        binging your favourite show.
         <div class="plate-container">
         <img src="/images/Chili-Dogs2.jpg" alt="chilidog-plate" class="plate">
         </div>
@@ -31,31 +33,34 @@
     </pre>
 
     <p></p>
+    <button type="button" id="toggleIngredientsBtn">Toggle Ingredients</button>
     <div>
       <h4>Ingredients</h4>
-      <ul>
-        <li>Pack of beef hot dogs</li>
-        <li>Pack of hot dog buns</li>
-        <li>Pack of lean ground beef</li>
-        <li>16 oz can of crushed tomatoes</li>
-        <li>1 tablespoon of olive oil</li>
-        <li>1 yellow onion</li>
-        <li>4 cloves of garlic</li>
-        <li>2 tablespoons of chili powder</li>
-        <li>1 tablespoon of maple sugar</li>
-        <li>1 tsp of smoked paprika</li>
-        <li>2 tsp thyme</li>
-        <li>1 bay leaf</li>
-        <li>Salt</li>
-        <li>Pepper</li>
-        <li>Shredded Cheddar Cheese</li>
-        <li>Diced green, red or leftover yellow onion for garnish</li>
+      <ul id="ingredientsList">
+        <li class="list-1">Pack of hot dog buns</li>
+        <li class="list-1">Pack of beef hot dogs</li>
+        <li class="list-1">Pack of lean ground beef</li>
+        <li class="list-1">16 oz can of crushed tomatoes</li>
+        <li class="list-1">1 tablespoon of olive oil</li>
+        <li class="list-1">1 yellow onion</li>
+        <li class="list-1">4 cloves of garlic</li>
+        <li class="list-1">2 tablespoons of chili powder</li>
+        <li class="list-1">1 tablespoon of maple sugar</li>
+        <li class="list-1">1 tsp of smoked paprika</li>
+        <li class="list-1">2 tsp thyme</li>
+        <li class="list-1">1 bay leaf</li>
+        <li class="list-1">Salt</li>
+        <li class="list-1">Pepper</li>
+        <li class="list-1">Shredded Cheddar Cheese</li>
+        <li class="list-1">
+          Diced green, red or leftover yellow onion for garnish
+        </li>
       </ul>
     </div>
-
+    <button type="button" id="toggleDirectionsBtn">Toggle Recipe</button>
     <div>
       <h4>Directions</h4>
-      <ol>
+      <ol id="directionsList">
         <li>Heat a pot at medium-high heat with the olive oil</li>
         <li>
           Chop both the garlic and onion finely and place into the pot to cook
