@@ -33,19 +33,20 @@ a {
 
 #main-container {
   border-radius: 8px;
-  border: 2px solid white;
-  margin: 0px
-  padding: 0px
+  border: 2px solid rgb(40, 147, 241);
+  margin: 0px;
+  padding: 0px;
   /* Adjust the margin as needed */
 }
 #imageGallery {
+  
   border-radius: 8px;
   justify-content: center;
   padding: 10px;
   display: flex;
   width: 650px;
   height: 350px;
-  border: 2px solid white;
+  border: 2px solid rgb(238, 46, 46);
   margin-left: 275px;
 }
 
@@ -64,6 +65,7 @@ a {
 }
 #buttonContainer {
   background-color: rgb(105, 105, 245);
+  
   border-radius: 8px;
   display: flex;
   justify-content: space-between;
@@ -80,9 +82,12 @@ a {
   border-radius: 8px;
 }
 #containers-row{
-
+padding: 10px;
   border: 2px solid blue;
+  width: 1200px;
+  height: 350px;
   border-radius: 8px;
+  margin-left: 10px;
   margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
