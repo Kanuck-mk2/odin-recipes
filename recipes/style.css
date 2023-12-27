@@ -1,6 +1,6 @@
 /* Global styles */
 * {
-  background-color: #333;
+  background-color: hsl(0, 0%, 20%);
 }
 
 body {
@@ -104,18 +104,18 @@ a {
 a#header-link {
   display: block;
   text-align: center;
-  color: #fff;
-  background-color: #333;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 20%);
   padding: 10px 20px;
-  border: 1px solid #fff;
+  border: 1px solid hsl(0, 0%, 100%);
   border-radius: 5px;
   margin: 20px;
   transition: background-color 0.3s, color 0.3s;
 }
 
 a#header-link:hover {
-  background-color: #fff;
-  color: #333;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 20%);
 }
 
 /* Image styles */
@@ -143,37 +143,42 @@ a#header-link:hover {
 }
 
 button {
-  border: 2px solid white;
+  border: 2px solid hsl(0, 0%, 100%);
   border-radius: 5px;
   font-weight: 550;
-  color: #2c2823;
-  background: rgb(216, 193, 110);
+  color: hsl(33, 11%, 15%);
+  background: hsl(47, 58%, 64%);
 }
 
 #ingredientsList {
-  color: white;
+  color: hsl(0, 0%, 100%);
   border-radius: 8px;
 
   /* Define a linear gradient for the border */
   border: 2px solid transparent;
   border-image: linear-gradient(
     to right,
-    #ff7e5f,
-    #feb47b
+    hsl(12, 100%, 69%),
+    hsl(26, 98%, 74%)
   ); /* Adjust the colors as needed */
   border-image-slice: 1; /* Ensures the entire border is used for the gradient */
 }
 
 #directionsList {
-  color: white;
+  color: hsl(0, 0%, 100%);
   border-radius: 8px;
 
   /* Define a linear gradient for the border */
   border: 2px solid transparent;
   border-image: linear-gradient(
     to right,
-    #ff7e5f,
-    #feb47b
+    hsl(12, 100%, 69%),
+    hsl(26, 98%, 74%)
   ); /* Adjust the colors as needed */
   border-image-slice: 1;
+}
+
+a[href='#header']:hover {
+  color: hsl(35, 91%, 50%); /* Change this to the desired color */
+  text-decoration: underline; /* Optional: Underline the link on hover */
 }
