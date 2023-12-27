@@ -1,61 +1,69 @@
-/* Add these styles to your existing CSS */
+/* Global styles */
 body {
-  background-color: black;
+  background-color: hsl(0, 0%, 0%); /* Black background */
 }
+
+/* Heading styles */
 h1 {
-  color: hsl(0, 30%, 96%);
+  color: hsl(0, 30%, 96%); /* Light gray text */
   text-align: center;
 }
-h3{
-  color: rgb(68, 180, 245);
+
+h3 {
+  color: hsl(200, 77%, 58%); /* Blue color using HSL */
   text-decoration: underline;
   font-size: 40px;
   text-align: center;
 }
-pre{
+
+pre {
   font-size: 25px;
-  
   text-align: center;
-  
 }
 
-/* Optional: Reduce margin for paragraphs */
+/* Text styles */
 p {
   margin: 10px 0;
-  color: white; /* Adjust the top and bottom margins as needed */
+  color: hsl(0, 0%, 100%); /* White text */
 }
 
-/* Optional: Reduce margin for anchor (link) */
 a {
-  color: white;
-  margin: 10px 0; /* Adjust the top and bottom margins as needed */
+  color: hsl(0, 0%, 100%); /* White text */
+  margin: 10px 0;
+}
+
+/* Containers */
+#main-container,
+#imageGallery,
+#text-container,
+#buttonContainer,
+#containers-row,
+#direction-container,
+#recipe-container {
+  border-radius: 8px; /* Rounded corners */
 }
 
 #main-container {
-  border-radius: 8px;
-  border: 2px solid rgb(40, 147, 241);
-  margin: 0px;
-  padding: 0px;
-  /* Adjust the margin as needed */
+  border: 2px solid hsl(210, 64%, 75%); /* Light blue border using HSL */
+  margin: 0;
+  padding: 0;
 }
+
 #imageGallery {
-  
-  border-radius: 8px;
   justify-content: center;
   padding: 10px;
   display: flex;
   width: 650px;
   height: 350px;
-  border: 2px solid rgb(238, 46, 46);
+  border: 2px solid hsl(0, 83%, 55%); /* Red border using HSL */
   margin-left: 275px;
 }
 
 #text-container {
-  background: slateblue;
+  background: hsl(248, 50%, 39%); /* Slate blue background using HSL */
   border-radius: 8px;
-  
   align-items: center;
-  border: 2px solid white;
+  border: 2px solid hsl(0, 0%, 100%); /* White border */
   padding: 10px;
   margin: 30px;
   margin-left: 100px;
@@ -63,27 +71,28 @@ a {
   width: 1000px;
   height: 300px;
 }
+
 #buttonContainer {
-  background-color: rgb(105, 105, 245);
-  
+  background-color: hsl(249, 60%, 70%); /* Light purple background using HSL */
   border-radius: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
   width: 250px;
-  border: 2px solid white;
+  border: 2px solid hsl(0, 0%, 100%); /* White border */
   margin-top: 50px;
   margin-left: 475px;
-  /* Adjust the left margin as needed */
 }
-#buttonContainer button{
-  border: 2px solid black;
+
+#buttonContainer button {
+  border: 2px solid hsl(0, 0%, 0%); /* Black border */
   border-radius: 8px;
 }
-#containers-row{
-padding: 10px;
-  border: 2px solid blue;
+
+#containers-row {
+  padding: 10px;
+  border: 2px solid hsl(240, 100%, 50%); /* Blue border using HSL */
   width: 1200px;
   height: 350px;
   border-radius: 8px;
@@ -94,20 +103,19 @@ padding: 10px;
 }
 
 #direction-container {
-  border: 2px solid red;
+  border: 2px solid hsl(0, 100%, 50%); /* Red border using HSL */
   border-radius: 8px;
   width: 350px;
   height: 320px;
   margin-top: 10px;
   margin-right: 200px;
-  
 }
+
 #recipe-container {
-  border: 2px solid white;
+  border: 2px solid hsl(0, 0%, 100%); /* White border */
   border-radius: 8px;
   width: 350px;
   height: 320px;
   margin-top: 10px;
-  margin-left: 200px; /* Adjust the top margin as needed */
+  margin-left: 200px;
 }
-
