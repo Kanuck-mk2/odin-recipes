@@ -142,7 +142,7 @@ a#header-link:hover {
   box-shadow: 0 0 12px 2px hsl(0, 74%, 58%);
 }
 
-button{
+button {
   border: 2px solid white;
   border-radius: 5px;
   font-weight: 550;
@@ -156,6 +156,24 @@ button{
 
   /* Define a linear gradient for the border */
   border: 2px solid transparent;
-  border-image: linear-gradient(to right, #ff7e5f, #feb47b); /* Adjust the colors as needed */
+  border-image: linear-gradient(
+    to right,
+    #ff7e5f,
+    #feb47b
+  ); /* Adjust the colors as needed */
   border-image-slice: 1; /* Ensures the entire border is used for the gradient */
+}
+
+#directionsList {
+  color: white;
+  border-radius: 8px;
+
+  /* Define a linear gradient for the border */
+  border: 2px solid transparent;
+  border-image: linear-gradient(
+    to right,
+    #ff7e5f,
+    #feb47b
+  ); /* Adjust the colors as needed */
+  border-image-slice: 1;
 }
