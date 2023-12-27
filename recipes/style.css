@@ -1,48 +1,107 @@
+/* Global styles */
 * {
   background-color: #333;
 }
 
-/* Selectors for various text/header elements */
-h1,
-h3,
-h4,
-p,
-ul,
-ol,
-li,
-a {
+body {
+  background-color: hsl(0, 0%, 20%);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Heading styles */
+h1, h3 {
+  color: hsl(208, 100%, 97%);
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.6rem;
+  position: relative;
+  margin-top: 0px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+
+h4::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #ff8c00, #ff0000);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+h4:hover::after {
+  opacity: 1;
+}
+
+/* Text styles */
+p, ul, a {
   color: hsl(0, 0%, 100%);
   background-color: hsl(0, 0%, 20%);
   margin-left: 10px;
 }
+ul, ol, li {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 20%);
+  margin-left: 10px;
+  
+}
+
+
 pre {
   color: hsl(0, 0%, 100%);
   font-size: 20px;
-  margin-left: 5px;
+  text-align: center;
+  margin-top: 5rem;
 }
 
-/* Style the anchor (link) to make it more visible */
+/* Anchor (link) styles */
 a {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
-/* Optionally, you can style other elements for better readability */
-body {
-  background-color: #333; /* Set a background color to provide contrast */
-  font-family: Arial, sans-serif; /* Choose a suitable font family */
-  line-height: 1.6; /* Adjust line height for better readability */
+a#header-link {
+  display: block;
+  text-align: center;
+  color: #fff;
+  background-color: #333;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin: 20px;
+  transition: background-color 0.3s, color 0.3s;
 }
-.hot-dog {
+
+a#header-link:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Image styles */
+.hot-dog-container, .plate-container {
+  text-align: center;
+}
+
+.hot-dog, .plate {
+  width: 500px;
   border: 2px solid hsl(0, 0%, 0%);
   border-radius: 8px;
-  box-shadow: 0 0 5px 5px hsl(0, 56%, 54%);
+  transition: transform 0.3s ease-in-out;
 }
 
-.plate {
-  height: 500px;
-  width: 300px;
-  margin: 10px;
-  border: 2px solid black;
-  border-radius: 8px;
-  box-shadow: 0 0 5px 5px hsl(60, 83%, 71%);
+.hot-dog:hover, .plate:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 12px 2px hsl(0, 74%, 58%);
 }
