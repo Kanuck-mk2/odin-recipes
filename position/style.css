@@ -1,0 +1,62 @@
+/* Add these styles to your existing CSS */
+body {
+  background-color: black;
+}
+#main-container {
+  border: 2px solid white;
+  margin-left: 35px; 
+  /* Adjust the margin as needed */
+}
+#imageGallery {
+  display: flex;
+  border: 2px solid white;
+  margin-left: 100px;
+}
+h1 {
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+#text-container {
+  align-items: center;
+  border: 2px solid white;
+  padding: 10px;
+  margin: 30px;
+  margin-left: 300px;
+  margin-top: 100px;
+  width: 700px;
+  height: 300px;
+}
+#buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 250px;
+  border: 2px solid white;
+  margin-top: 10px;
+  margin-left: 450px;
+ /* Adjust the left margin as needed */
+}
+
+#direction-container {
+  border: 2px solid red;
+  width: 350px;
+  height: 400px;
+  margin-top: 30px;
+}
+#recipe-container {
+  border: 2px solid white;
+  width: 350px;
+  height: 400px;
+  margin-top: 10px; /* Adjust the top margin as needed */
+}
+
+/* Optional: Reduce margin for paragraphs */
+p {
+  margin: 10px 0; /* Adjust the top and bottom margins as needed */
+}
+
+/* Optional: Reduce margin for anchor (link) */
+a {
+  margin: 10px 0; /* Adjust the top and bottom margins as needed */
+}
