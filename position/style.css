@@ -28,6 +28,7 @@ p {
 }
 
 a {
+  border: 2px solid hsl(0, 0%, 100%);
   color: hsl(0, 0%, 100%); /* White text */
   margin: 10px 0;
 }
@@ -44,19 +45,47 @@ a {
 }
 
 #main-container {
-  border: 2px solid hsl(210, 64%, 75%); /* Light blue border using HSL */
+  color: aliceblue;
+  display: flexbox;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  border: 2px solid hsl(290, 66%, 46%); /* Light blue border using HSL */
+
   margin: 0;
   padding: 0;
+  transition: transform 0.3s ease-in-out;
+}
+#main-container:hover {
+  box-shadow: 0 0 012px 3px hsl(290, 66%, 46%);
 }
 
 #imageGallery {
   justify-content: center;
-  padding: 10px;
+  position: relative;
+  padding: 30px;
   display: flex;
   width: 650px;
   height: 350px;
   border: 2px solid hsl(0, 83%, 55%); /* Red border using HSL */
   margin-left: 275px;
+  transition: transform 0.3s ease-in-out;
+}
+#imageGallery:hover {
+  box-shadow: 0 0 12px 3px hsl(0, 83%, 55%);
+  transform: scale(1.05);
+}
+.image {
+  margin: 0px;
+  border: 3px solid hsl(200, 77%, 58%);
+  border-radius: 8px;
+
+  transition: transform 0.3s ease-in-out;
+}
+.image:hover {
+  box-shadow: 0 0 12px 3px hsl(200, 77%, 58%);
+  transform: scale(1.05);
 }
 
 #text-container {
@@ -67,9 +96,14 @@ a {
   padding: 10px;
   margin: 30px;
   margin-left: 100px;
-  margin-top: 100px;
+  margin-top: 50px;
   width: 1000px;
   height: 300px;
+  transition: transform 0.3s ease-in-out;
+}
+#text-container:hover {
+  box-shadow: 0 0 12px 3px hsl(0, 0%, 100%);
+  transform: scale(1.05);
 }
 
 #buttonContainer {
@@ -83,6 +117,11 @@ a {
   border: 2px solid hsl(0, 0%, 100%); /* White border */
   margin-top: 50px;
   margin-left: 475px;
+  transition: transform 0.3s ease-in-out;
+}
+#buttonContainer:hover {
+  box-shadow: 0 0 12px 3px hsl(0, 0%, 100%);
+  transform: scale(1.05);
 }
 
 #buttonContainer button {
@@ -91,31 +130,58 @@ a {
 }
 
 #containers-row {
-  padding: 10px;
+  color: aliceblue;
+  padding: 1px;
   border: 2px solid hsl(240, 100%, 50%); /* Blue border using HSL */
+
   width: 1200px;
+
   height: 350px;
   border-radius: 8px;
-  margin-left: 10px;
+  margin-left: 20px;
   margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
+  transition: transform 0.3s ease-in-out;
+}
+#containers-row:hover {
+  box-shadow: 0 0 12px 3px hsl(240, 100%, 50%);
+  transform: scale(1.05);
 }
 
 #direction-container {
   border: 2px solid hsl(0, 100%, 50%); /* Red border using HSL */
   border-radius: 8px;
+
   width: 350px;
   height: 320px;
   margin-top: 10px;
-  margin-right: 200px;
+  margin-right: 100px;
+  transition: transform 0.3s ease-in-out;
+}
+#direction-container:hover {
+  box-shadow: 0 0 12px 3px hsl(0, 100%, 50%);
+  transform: scale(1.05);
 }
 
 #recipe-container {
   border: 2px solid hsl(0, 0%, 100%); /* White border */
+
   border-radius: 8px;
   width: 350px;
   height: 320px;
   margin-top: 10px;
-  margin-left: 200px;
+  margin-left: 100px;
+  transition: transform 0.3s ease-in-out;
+}
+#recipe-container:hover {
+  box-shadow: 0 0 12px 3px hsl(0, 0%, 100%);
+  transform: scale(1.05);
+}
+#footer-container {
+  margin-left: 30px;
+
+  width: 50%;
+  border: 2px solid greenyellow;
+  border-radius: 5px;
 }
